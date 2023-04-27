@@ -9,7 +9,7 @@
     Use querySelector to select that button and save it to a variable called sayHelloButton
 */
 
-// CODE HERE
+let sayHelloButton = document.querySelector('#say-hello-button')
 
 
 // PROBLEM 2
@@ -19,7 +19,13 @@
     Attach a mouseover event to sayHelloButton that calls the function you wrote
 */
 
-// CODE HERE
+function backgroundChanger(event){
+    event.classList.add.mouseOver
+}
+sayHelloButton.addEventListener('mouseover', () => [
+    backgroundChanger()
+])
+
 
 
 // PROBLEM 3

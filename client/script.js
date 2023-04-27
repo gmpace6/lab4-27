@@ -19,12 +19,11 @@ let sayHelloButton = document.querySelector('#say-hello-button')
     Attach a mouseover event to sayHelloButton that calls the function you wrote
 */
 
-function backgroundChanger(event){
-    event.classList.add.mouseOver
+function backgroundChanger(){
+    sayHelloButton.style.backgroundColor = 'black'
+    sayHelloButton.style.color = 'white'
 }
-sayHelloButton.addEventListener('mouseover', () => [
-    backgroundChanger()
-])
+sayHelloButton.addEventListener('mouseover', backgroundChanger)
 
 
 
@@ -37,7 +36,11 @@ sayHelloButton.addEventListener('mouseover', () => [
     Attach another listener that fires your second function when the mouseout event occurs on the button
 */
 
-// CODE HERE
+function backgroundChanger1(){
+    sayHelloButton.style.backgroundColor = '#EFEFEF'
+    sayHelloButton.style.color = 'black'
+}
+sayHelloButton.addEventListener('mouseout', backgroundChanger1)
 
 
 // PROBLEM 4
